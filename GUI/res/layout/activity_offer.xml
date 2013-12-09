@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainMenuActivity" >
+    
+    <TextView
+        android:id="@+id/ItemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Short Description"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/OtherParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemDescription"
+        android:layout_centerHorizontal="true"
+        android:text="Other party"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OtherParty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="price$$"
+        android:textSize="20sp" />
+    <RelativeLayout 
+        android:id="@+id/Offers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true">
+	    <Button
+	        android:id="@+id/AcceptOffer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_toLeftOf="@+id/RejectOffer"
+	        android:text="ACCEPT" 
+	        android:onClick="accept"/>
+	
+	    <Button
+	        android:id="@+id/RejectOffer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:text="REJECT"
+	        android:onClick="reject"/>
+        <EditText
+            android:id="@+id/CouterEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Counter Ammount"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/RejectOffer"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/CounterOffer"/>
+        <Button
+	        android:id="@+id/CounterOffer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_below="@+id/RejectOffer"
+	        android:layout_alignParentRight="true"
+	        android:text="COUNTER" 
+	        android:onClick="counter"/>
+    </RelativeLayout>
+</RelativeLayout>
