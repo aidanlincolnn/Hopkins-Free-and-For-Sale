@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".AccountActivity" >
+    
+    <TextView
+        android:id="@+id/accountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account information"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="80dp">
+    
+    <TextView
+    android:id="@+id/accountNameLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_gravity="center_horizontal"
+    android:textSize="30sp"
+    android:text="Name" />
+
+    <TextView
+    android:id="@+id/accountName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="35sp"
+    android:layout_marginLeft="140dp"
+    android:text="Name" 
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+        
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp">
+    
+    <TextView
+        android:id="@+id/accountUNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text="User Name" />
+    
+        <EditText
+    android:id="@+id/accountUName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="35sp"
+    android:layout_marginLeft="100dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </LinearLayout>
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp">
+    
+    <TextView
+        android:id="@+id/accountPWLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:textSize="30sp"
+        android:text="Password" />
+    
+    <EditText
+    android:id="@+id/accountPW"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="35sp"
+    android:layout_marginLeft="100dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp">
+    
+    <TextView
+        android:id="@+id/accountEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:text="Email" />
+    
+    <TextView
+    android:id="@+id/accountEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="35sp"
+    android:layout_marginLeft="140dp"
+    android:text="Email" 
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp">
+    
+    <TextView
+        android:id="@+id/accountPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:text="Phone" />
+    
+    <EditText
+    android:id="@+id/accountPhone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="35sp"
+    android:layout_marginLeft="120dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp">
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Press to submit your changes"
+        android:onClick="makeChange"/>
+</LinearLayout>
+
+</LinearLayout>

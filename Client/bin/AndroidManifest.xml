@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group13.hffs.gui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission 
+        android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.group13.hffs.gui.LogInActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.group13.hffs.gui.StartActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group13.hffs.gui.StartActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.SignUpActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.group13.hffs.gui.StartActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group13.hffs.gui.StartActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.MainMenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.PostItemActivity"
+            android:label="@string/title_activity_post_item"
+            android:parentActivityName="com.group13.hffs.gui.MainMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group13.hffs.gui.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.ViewOffersActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.group13.hffs.gui.MainMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group13.hffs.gui.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.OfferActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.group13.hffs.gui.ViewOffersActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group13.hffs.gui.ViewOffersActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.BrowseItemActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName="com.group13.hffs.gui.MainMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ffs.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.ItemPage"
+            android:label="@string/app_name" 
+             android:parentActivityName="com.group13.hffs.gui.BrowseItemActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ffs.BrowseItemActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.RecoverPasswordActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.group13.hffs.gui.LogInActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group13.hffs.gui.LogInActivity" />
+        </activity>
+        <activity
+            android:name="com.group13.hffs.gui.AccountActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.group13.hffs.gui.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group13.hffs.gui.MainMenuActivity" />
+        </activity>
+    </application>
+
+</manifest>

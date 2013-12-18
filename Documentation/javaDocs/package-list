@@ -1,0 +1,11 @@
+com.group13.hffs.gui
+com.group13.hffs.gui.test
+oose.group13.hffs.client
+oose.group13.hffs.data
+oose.group13.hffs.hibernate
+oose.group13.hffs.hibernate.test
+oose.group13.hffs.mail
+oose.group13.hffs.server
+oose.group13.hffs.server.test
+oose.group13.hffs.tcp
+oose.group13.hffs.transport
